@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  #E5E5E5;
+}
+
+header{
+    width: 100% ;
+    height: 50px;
+
+    
+}
+main{ 
+    width: 100% ;
+    height: 90%;
+    /*background-color: brown;*/
+    display: flex;/*pone 1 sección a la par de otra, ya que por defecto se ponen un debajo de otra*/
+    justify-content: space-between;/*separa 2 secciones */
+
+}
+section{
+    width: 40%;
+    height: 100%;
+
+}
+
+.seccion1{
+    width: 70%;
+
+}
+.area{
+    text-transform: lowercase; /*cada mayúscula se transforma en minúscula*/
+    width: 80%;
+    height: 70%;
+    padding-left: 15%;
+    padding-top: 5%;
+    display: block; /*tambien es para centrar ocupando el 100% del main*/
+    margin: auto; /*Para que no ocupe el 100% se coloca un margen para que se vea centrado textarea*/
+    margin-top: 20px;/* para que se separe del encabezado*/
+    resize: none;/*no permite modificar el tamaño manualmente el textarea*/
+    font-size: 30px;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border: none;/*quitar el borde*/
+    outline:none;/*quitar el borde seleccionado*/
+    
+}
+.sim{
+    margin-left: 70px;
+    margin-top: 19px;
+}
+.ad{
+    margin-top: 20px;
+
+}
+
+.boton_encriptador{ 
+    width: 25%;
+    height: 40px;
+    margin-left: 19px;
+    margin-right: 30;
+    width: 240px;
+    height: 67px;
+    border-radius: 20px;
+    border-color: #0A3871;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+}
+.boton_encriptador:hover{ 
+    background-color: #0A3871;
+    color: white;
+}
+.boton_desencriptador{   
+    width: 25%;
+    height: 40px;
+    margin-right: 70px;
+    width: 240px;
+    height: 67px;
+    border-radius: 20px;
+    border-color: #0A3871;
+    background-color: white;
+    color: #0A3871;
+    cursor: pointer;
+}
+.boton_desencriptador:hover{   
+    background-color: #D8DFE8;
+    color: #0A3871;
+
+}
+.contenedor_botones{ 
+ 
+        text-align: center;/*funcion para centrar un div*/
+        margin-top: 60px;
+        box-sizing: border-box;
+        overflow: hidden; 
+    
+}
+
+
+.seccion2{
+    width: 20%;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+    color: #0A3871;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    
+    
+}
+.contenedor_munheco{
+    /*height: 304px;
+    width: 336px;
+    left: 1032px;
+    padding-top: 150px;*/
+    
+    
+    width: 100%;
+    height: 70%;
+    padding-top: 150px;/*posicionamos la imagen, como si le  indicaramos una altura con pixeles*/
+    box-sizing: border-box;/*permite mover la imagen fuera del div, más no deja que mueva a los divs posteriores*/
+    overflow: hidden;/*esta funcion no permite a a la imagen salir del div*/
+}
+
+.contenedor_h3{
+     
+    width: 100%;
+    height: 15%;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.contenedor_parrafo{
+    width: 100%;
+    height: 15%;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.contenedor_resultado{
+
+    width: 100%;
+    height: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.texto_resultado{
+
+    color: #0A3871;
+}
+
+.contenedor_copiar{
+
+    width: 100%;
+    height: 20%;
+    padding-top: 30%;
+
+}
+
+
+.boton_copiar{
+    width: 35%;
+    height: 40px;
+    font-size: 16px;/*el tamaño de letra*/
+    margin: 4px 2px;
+    display: block;
+    margin: auto;/*centramos el boton*/
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0A3871;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.boton_copiar:hover{
+    background-color: #0A3871;
+    color: white;
+}
+footer{
+
+    width: 100% ;
+    height: 50px;
+    text-align: center;
+}
+
+.ocultar{
+    display: none;/*se oculta todo lo que tenga escrito ocultar el class*/
+}

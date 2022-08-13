@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EncriptadorEdgar</title>
+    <link rel="stylesheet" href="stilos.css" />
+    <!--vincular css con html usando la etiqueta link, rel: indica que es una hoja de estilos y href: la ruta del archivo css-->
+  </head>
+  <body>
+    <header>
+      <!--Para ingresar un encabezado-->
+
+      <img
+        style="margin-top: 15px"
+        src="Logo.png"
+        alt="Logo de alura"
+      /><!--img para ingresar imagen y va en header, el src:la ruta donde se encuentre la imagen -->
+    </header>
+
+    <main>
+      <section class="seccion1">
+        <form>
+          <textarea
+            class="area"
+            placeholder="Ingrese el texto aquí"
+            autofocus
+          ></textarea>
+        </form>
+        <div>
+          <div style="float: left; width: 10%; height: 20%">
+            <img class="sim" src="Vector.png" alt="advertencia" />
+          </div>
+          <div style="float: left; width: 50%; height: 3%">
+            <p class="ad">solo letras minusculas y sin acentos</p>
+          </div>
+        </div>
+        <div class="contenedor_botones">
+          <input type="button" class="boton_encriptador" value="encriptar" />
+          <input
+            type="button"
+            class="boton_desencriptador"
+            value="desencriptar"
+          />
+        </div>
+      </section>
+
+      <section class="seccion2">
+        <div class="contenedor_munheco">
+          <img src="Muñeco.png" alt="muñeco alura" />
+        </div>
+        <div class="contenedor_h3">
+          <h3>Ningun mensaje fue encontrado</h3>
+        </div>
+        <div class="contenedor_parrafo">
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <div class="contenedor_resultado">
+          <h3>Mensaje Encriptado</h3>
+          <p class="textoRecibido" id="copiar"></p>
+          <!--texto para recibir los datos ecriptados o desencriptados-->
+        </div>
+        <div class="contenedor_copiar">
+          <input
+            type="button"
+            class="boton_copiar"
+            onclick="copyToClickBoard()"
+            value="copiar"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Creado por Edgar García</p>
+    </footer>
+    <script src="encriptador.js"></script>
+    <!--vincular javaScript con html-->
+  </body>
+</html>
